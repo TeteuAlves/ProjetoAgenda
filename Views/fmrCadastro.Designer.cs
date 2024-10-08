@@ -50,6 +50,7 @@
             cadastrar.TabIndex = 0;
             cadastrar.Text = "Cadastrar";
             cadastrar.UseVisualStyleBackColor = true;
+            cadastrar.Click += cadastrar_Click;
             // 
             // cancelar
             // 
@@ -59,6 +60,7 @@
             cancelar.TabIndex = 1;
             cancelar.Text = "Cancelar";
             cancelar.UseVisualStyleBackColor = true;
+            cancelar.Click += cancelar_Click;
             // 
             // label2
             // 
