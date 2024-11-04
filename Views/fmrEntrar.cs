@@ -1,3 +1,5 @@
+using ProjetoAgenda.Controller;
+
 namespace ProjetoAgenda
 {
     public partial class fmrEntrar : Form
@@ -54,6 +56,20 @@ namespace ProjetoAgenda
             {
                 entrar.Enabled = false;
             }
+        }
+
+        private void entrar_Click(object sender, EventArgs e)
+        {
+            UsuarioController controleUsuario = new UsuarioController();
+
+            bool resultado = controleUsuario.LoginUsuario("Godo", "Alexlindao");
+
+            if (resultado = true)
+            {
+                fmrPrinci fmrPrinci = new fmrPrinci();
+                fmrPrinci.ShowDialog();
+            }
+            
         }
     }
 }
