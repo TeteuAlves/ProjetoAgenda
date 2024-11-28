@@ -21,7 +21,7 @@ namespace ProjetoAgenda
         }
         private void habilitarCadastro()
         {
-            if (nome.Text.Length > 0 && usuario.Text.Length > 0 && senha.Text.Length >= 4 && repitsenha.Text.Length >= 4 && senha.Text == repitsenha.Text)
+            if (txtnome.Text.Length > 0 && txtusuario.Text.Length > 0 && txtsenha.Text.Length >= 4 && repitsenha.Text.Length >= 4 && txtsenha.Text == repitsenha.Text)
             {
                 cadastrar.Enabled = true;
             }
@@ -36,17 +36,17 @@ namespace ProjetoAgenda
             this.Hide();
         }
 
-        private void nome_TextChanged(object sender, EventArgs e)
+        private void txtnome_TextChanged(object sender, EventArgs e)
         {
             habilitarCadastro();
         }
 
-        private void usuario_TextChanged(object sender, EventArgs e)
+        private void txtusuario_TextChanged(object sender, EventArgs e)
         {
             habilitarCadastro();
         }
 
-        private void senha_TextChanged(object sender, EventArgs e)
+        private void txtsenha_TextChanged(object sender, EventArgs e)
         {
             habilitarCadastro();
         }
@@ -67,9 +67,9 @@ namespace ProjetoAgenda
 
             MySqlCommand comando = new MySqlCommand(sql, conexao);
 
-            comando.Parameters.AddWithValue("@nome", nome);
-            comando.Parameters.AddWithValue("@usuario", usuario);
-            comando.Parameters.AddWithValue("@senha", senha);
+            comando.Parameters.AddWithValue("@nome", txtnome.Text);
+            comando.Parameters.AddWithValue("@usuario", txtusuario.Text);
+            comando.Parameters.AddWithValue("@senha", txtsenha.Text);
 
             comando.ExecuteNonQuery();
 
@@ -85,5 +85,7 @@ namespace ProjetoAgenda
             this.Hide();
 
         }
+
+       
     }
 }

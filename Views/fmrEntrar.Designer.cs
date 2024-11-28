@@ -41,7 +41,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(147, 22);
+            label1.Location = new Point(136, 34);
             label1.Name = "label1";
             label1.Size = new Size(94, 32);
             label1.TabIndex = 0;
@@ -51,7 +51,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(147, 123);
+            label2.Location = new Point(146, 134);
             label2.Name = "label2";
             label2.Size = new Size(80, 32);
             label2.TabIndex = 1;
@@ -87,13 +87,14 @@
             entrar.Text = "Entrar";
             entrar.UseVisualStyleBackColor = true;
             entrar.EnabledChanged += entrar_EnabledChanged;
+            entrar.Click += entrar_Click;
             // 
             // cadastrar
             // 
             cadastrar.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cadastrar.Location = new Point(218, 247);
+            cadastrar.Location = new Point(210, 247);
             cadastrar.Name = "cadastrar";
-            cadastrar.Size = new Size(120, 38);
+            cadastrar.Size = new Size(133, 38);
             cadastrar.TabIndex = 5;
             cadastrar.Text = "Cadastrar";
             cadastrar.UseVisualStyleBackColor = true;

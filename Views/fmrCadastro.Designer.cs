@@ -35,18 +35,19 @@
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
-            nome = new TextBox();
+            txtnome = new TextBox();
             repitsenha = new TextBox();
-            usuario = new TextBox();
-            senha = new TextBox();
+            txtusuario = new TextBox();
+            txtsenha = new TextBox();
             SuspendLayout();
             // 
             // cadastrar
             // 
             cadastrar.Enabled = false;
-            cadastrar.Location = new Point(28, 362);
+            cadastrar.Location = new Point(32, 483);
+            cadastrar.Margin = new Padding(3, 4, 3, 4);
             cadastrar.Name = "cadastrar";
-            cadastrar.Size = new Size(136, 41);
+            cadastrar.Size = new Size(155, 55);
             cadastrar.TabIndex = 0;
             cadastrar.Text = "Cadastrar";
             cadastrar.UseVisualStyleBackColor = true;
@@ -54,9 +55,10 @@
             // 
             // cancelar
             // 
-            cancelar.Location = new Point(179, 362);
+            cancelar.Location = new Point(205, 483);
+            cancelar.Margin = new Padding(3, 4, 3, 4);
             cancelar.Name = "cancelar";
-            cancelar.Size = new Size(136, 41);
+            cancelar.Size = new Size(155, 55);
             cancelar.TabIndex = 1;
             cancelar.Text = "Cancelar";
             cancelar.UseVisualStyleBackColor = true;
@@ -66,9 +68,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(28, 113);
+            label2.Location = new Point(32, 151);
             label2.Name = "label2";
-            label2.Size = new Size(83, 30);
+            label2.Size = new Size(108, 37);
             label2.TabIndex = 3;
             label2.Text = "Usuário";
             // 
@@ -76,9 +78,9 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(28, 251);
+            label3.Location = new Point(32, 335);
             label3.Name = "label3";
-            label3.Size = new Size(149, 30);
+            label3.Size = new Size(189, 37);
             label3.TabIndex = 4;
             label3.Text = "Repita a senha";
             // 
@@ -86,9 +88,9 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(28, 182);
+            label4.Location = new Point(32, 243);
             label4.Name = "label4";
-            label4.Size = new Size(70, 30);
+            label4.Size = new Size(89, 37);
             label4.TabIndex = 5;
             label4.Text = "Senha";
             // 
@@ -97,67 +99,72 @@
             label5.AutoSize = true;
             label5.BackColor = Color.FromArgb(224, 224, 224);
             label5.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.Location = new Point(28, 44);
+            label5.Location = new Point(32, 62);
             label5.Name = "label5";
-            label5.Size = new Size(70, 30);
+            label5.Size = new Size(90, 37);
             label5.TabIndex = 6;
             label5.Text = "Nome";
             // 
-            // nome
+            // txtnome
             // 
-            nome.Location = new Point(28, 77);
-            nome.Multiline = true;
-            nome.Name = "nome";
-            nome.Size = new Size(273, 33);
-            nome.TabIndex = 7;
-            nome.TextChanged += nome_TextChanged;
+            txtnome.Location = new Point(32, 103);
+            txtnome.Margin = new Padding(3, 4, 3, 4);
+            txtnome.Multiline = true;
+            txtnome.Name = "txtnome";
+            txtnome.Size = new Size(311, 43);
+            txtnome.TabIndex = 7;
+            txtnome.TextChanged += txtnome_TextChanged;
             // 
             // repitsenha
             // 
-            repitsenha.Location = new Point(28, 284);
+            repitsenha.Location = new Point(32, 379);
+            repitsenha.Margin = new Padding(3, 4, 3, 4);
             repitsenha.Multiline = true;
             repitsenha.Name = "repitsenha";
             repitsenha.PasswordChar = '*';
-            repitsenha.Size = new Size(193, 33);
+            repitsenha.Size = new Size(220, 43);
             repitsenha.TabIndex = 9;
             repitsenha.TextChanged += repitsenha_TextChanged;
             // 
-            // usuario
+            // txtusuario
             // 
-            usuario.Location = new Point(28, 146);
-            usuario.Multiline = true;
-            usuario.Name = "usuario";
-            usuario.Size = new Size(273, 33);
-            usuario.TabIndex = 10;
-            usuario.TextChanged += usuario_TextChanged;
+            txtusuario.Location = new Point(32, 195);
+            txtusuario.Margin = new Padding(3, 4, 3, 4);
+            txtusuario.Multiline = true;
+            txtusuario.Name = "txtusuario";
+            txtusuario.Size = new Size(311, 43);
+            txtusuario.TabIndex = 10;
+            txtusuario.TextChanged += txtusuario_TextChanged;
             // 
-            // senha
+            // txtsenha
             // 
-            senha.Location = new Point(28, 215);
-            senha.Multiline = true;
-            senha.Name = "senha";
-            senha.PasswordChar = '*';
-            senha.Size = new Size(193, 33);
-            senha.TabIndex = 11;
-            senha.TextChanged += senha_TextChanged;
+            txtsenha.Location = new Point(32, 287);
+            txtsenha.Margin = new Padding(3, 4, 3, 4);
+            txtsenha.Multiline = true;
+            txtsenha.Name = "txtsenha";
+            txtsenha.PasswordChar = '*';
+            txtsenha.Size = new Size(220, 43);
+            txtsenha.TabIndex = 11;
+            txtsenha.TextChanged += txtsenha_TextChanged;
             // 
             // fmrCadastro
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(327, 454);
-            Controls.Add(senha);
-            Controls.Add(usuario);
+            ClientSize = new Size(374, 605);
+            Controls.Add(txtsenha);
+            Controls.Add(txtusuario);
             Controls.Add(repitsenha);
-            Controls.Add(nome);
+            Controls.Add(txtnome);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(cancelar);
             Controls.Add(cadastrar);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "fmrCadastro";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form2";
@@ -174,9 +181,9 @@
         private Label label3;
         private Label label4;
         private Label label5;
-        private TextBox nome;
+        private TextBox txtnome;
         private TextBox repitsenha;
-        private TextBox usuario;
-        private TextBox senha;
+        private TextBox txtusuario;
+        private TextBox txtsenha;
     }
 }
